@@ -15,7 +15,7 @@ export default class extends BaseCommand {
         const features = Object.keys(GroupFeatures) as (keyof typeof GroupFeatures)[]
         if (!flags.length) {
             const sections: proto.Message.ListMessage.ISection[] = []
-            let text = '🍁 *Available Features*'
+            let text = '🐈‍⬛ *Available Features*'
             for (const feature of features) {
                 const rows: proto.Message.ListMessage.IRow[] = []
                 rows.push(
