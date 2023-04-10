@@ -2,7 +2,7 @@ import { Ship, IShipOptions } from '@shineiichijo/canvas-chan'
 import { Message, Command, BaseCommand } from '../../Structures'
 
 @Command('ship', {
-    description: 'Ship People! ♥',
+    description: 'Ship People! 🖤',
     cooldown: 15,
     exp: 50,
     category: 'fun',
@@ -37,11 +37,11 @@ export default class extends BaseCommand {
         else if (percentage >= 75 && percentage < 90) text = 'Great'
         else if (percentage >= 90) text = 'Amazing'
         const image = new Ship(shipArray, percentage, text)
-        let caption = `\t❣️ *Matchmaking...* ❣️ \n`
+        let caption = `\t🐱 *Matchmaking...* 🐈‍⬛ \n`
         caption += `\t\t---------------------------------\n`
         caption += `@${users[0].split('@')[0]}  x  @${users[1].split('@')[0]}\n`
         caption += `\t\t---------------------------------\n`
-        caption += `\t\t\t\t\t${percentage < 40 ? '💔' : percentage < 75 ? '❤' : '💗'} *ShipCent: ${percentage}%*\n`
+        caption += `\t\t\t\t\t${percentage < 40 ? '😶' : percentage < 75 ? '🖤' : '🐈‍⬛'} *ShipCent: ${percentage}%*\n`
         caption += text
         return void (await M.reply(await image.build(), 'image', undefined, undefined, caption, [users[0], users[1]]))
     }
