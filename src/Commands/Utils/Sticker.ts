@@ -79,7 +79,7 @@ export default class extends BaseCommand {
                     categories.push('😭')
                     break
                 case '--love':
-                    categories.push('❤️')
+                    categories.push('🖤')
                     break
                 case '--celebrate':
                     categories.push('🎉')
