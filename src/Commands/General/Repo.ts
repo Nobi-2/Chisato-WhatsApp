@@ -1,10 +1,10 @@
 import { BaseCommand, Command, Message } from '../../Structures'
 
-@Command('repo', {
+@Command('idontk', {
     description: 'Get the base repo of the bot',
     category: 'general',
-    aliases: ['script'],
-    usage: 'repo',
+    aliases: ['hiddencmd'],
+    usage: 'donotuse',
     cooldown: 5,
     exp: 100
 })
