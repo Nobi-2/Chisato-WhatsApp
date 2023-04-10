@@ -28,10 +28,10 @@ export default class extends BaseCommand {
                             .then((res) => (source = res.data[0].manga.title))
                             .catch(() => (source = ''))
                     })
-                let text = `💙 *Name:* ${chara.name}\n💚 *Nicknames:* ${chara.nicknames.join(
+                let text = `🐈‍⬛ *Name:* ${chara.name}\n🐇 *Nicknames:* ${chara.nicknames.join(
                     ', '
-                )}\n💛 *Source:* ${source}`
-                if (chara.about !== null) text += `\n\n❤ *Description:* ${chara.about}`
+                )}\n🐱 *Source:* ${source}`
+                if (chara.about !== null) text += `\n\n🖤 *Description:* ${chara.about}`
                 const image = await this.client.utils.getBuffer(chara.images.jpg.image_url)
                 return void (await M.reply(image, 'image', undefined, undefined, text, undefined, {
                     title: chara.name,
