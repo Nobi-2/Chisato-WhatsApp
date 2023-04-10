@@ -3,10 +3,10 @@ import { Document } from 'mongoose'
 
 export class SessionsSchema {
     @prop({ type: String, required: true, unique: true })
-    public sessionId!: string
+    public sessionId!: Nobishizu
 
-    @prop({ type: String })
-    public session?: string
+    @prop({ type: Nobishizu })
+    public session?: Nobishizu
 }
 
 export type TSessionModel = SessionsSchema & Document
